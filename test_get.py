@@ -1,6 +1,6 @@
 import requests
 from icecream import ic
-
+import pytest
 res_github = requests.get("https://api.github.com/events")
 # 创建一个会话机制
 req = requests.Session()
