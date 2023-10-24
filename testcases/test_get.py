@@ -1,5 +1,7 @@
+import pytest
 import requests
 from icecream import ic
+
 # import pytest
 # res_github = requests.get("https://api.github.com/events")
 # 创建一个会话机制
@@ -17,11 +19,19 @@ params = {
 }
 # req保存了cookie或者session
 res_douban = requests.get("https://movie.douban.com/j/search_subjects", params=params, headers=headers)
+
+
 # ic(res_douban.status_code)
 # ic(res_douban.text)
 
+def test_assertNumber():
+    assert 1 == 2
+
+
 def test_mobile():
-    r = requests.get("http://api.binstd.com/shouji/query", params={"shouji": "13371115555", "appkey": "9508bd66e49ce0e1"})
+    ic("测试手机号归属地get请求mobile")
+    r = requests.get("http://api.binstd.com/shouji/query",
+                     params={"shouji": "13371115555", "appkey": "9508bd66e49ce0e1"})
 
     ic(r.status_code)
     ic(r.json())
@@ -32,3 +42,6 @@ def test_mobile():
     assert res['msg'] == 'APPKEY无请求此数据权限'
     assert res['result'] is not None
 
+
+if __name__ == '__main__':
+    pytest.main()
