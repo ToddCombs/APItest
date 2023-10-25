@@ -2,6 +2,8 @@ import pytest
 import requests
 from icecream import ic
 
+mobile = '1333333333'
+
 
 class TestMobile:
 
@@ -11,6 +13,8 @@ class TestMobile:
     def teardown_method(self):
         ic("清理测试数据")
 
+    # @pytest.mark.skip
+    @pytest.mark.skipif('len(mobile)!=11')  # 如果返回True跳过，如果返回false则不会跳过
     def test_assertNumber(self):
         expect = 1
         actual = 1
