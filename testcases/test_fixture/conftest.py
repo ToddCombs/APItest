@@ -8,10 +8,19 @@ from icecream import ic
 def test_session():
     ic("我是session级的fixture")
 
-# @pytest.fixture(scope="function", autouse=False)
-# def test_func1():
-#     ic("我是function1级的fixture")
-#
-# @pytest.fixture(scope="function", autouse=True)
-# def test_func2():
-#     ic("我是function2级的fixture")
+@pytest.fixture(scope="function", autouse=False)
+def test_func1():
+    ic("我是function1级的fixture")
+
+@pytest.fixture(scope="function", autouse=False)
+def test_func2():
+    ic("我是function2级的fixture")
+
+@pytest.fixture(scope="function")
+def get_params():
+    """
+    pytest内的return的用法
+    :return:
+    """
+    params = {"shouji": "13371115555", "appkey": "9508bd66e49ce0e1"}
+    return params
