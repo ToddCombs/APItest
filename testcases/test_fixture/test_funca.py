@@ -3,7 +3,7 @@ import requests
 from icecream import ic
 # 默认scope是function,或class,或module,session(作用于所有py文件)区别是作用域不同
 # autouse=True则运行fixture
-@pytest.fixture(scope="class", autouse=True)
+@pytest.fixture(scope="class", autouse=False)
 def func():
     ic("前置步骤")
 

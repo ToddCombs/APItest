@@ -8,7 +8,7 @@ from icecream import ic
 def test_session():
     ic("我是session级的fixture")
 
-@pytest.fixture(scope="function", autouse=True)  # autouse作用在每个引用方法上，不用方法调用也可以
+@pytest.fixture(scope="function", autouse=False)  # autouse作用在每个引用方法上，不用方法调用也可以
 def test_func1():
     ic("我是function1级的fixture")
 
