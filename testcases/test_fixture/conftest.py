@@ -30,7 +30,7 @@ def get_params():
     return params
 
 
-@pytest.fixture(scope="function", autouse=False)
+@pytest.fixture(scope="function", autouse=True)
 def func():
     '''
     前置后置步骤可以写在一个函数里，用yield分割
@@ -41,3 +41,18 @@ def func():
     ic("我是前置步骤")
     yield
     ic("我是后置步骤")
+
+@pytest.fixture(scope="function")
+def use_fixture1():
+    '''
+    :return:
+    '''
+    ic("使用use_fixture1")
+    return "fixture"
+
+@pytest.fixture(scope="function")
+def use_fixture2():
+    '''
+    :return:
+    '''
+    ic("使用use_fixture2")
