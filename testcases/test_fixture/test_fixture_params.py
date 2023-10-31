@@ -5,4 +5,4 @@ def params_fixture(request):
     return request.param
 
 def test_params(params_fixture):
-    ic(params_fixture)  # 取到params入参并打印
+    ic(params_fixture)   # 取到params入参并打印
