@@ -16,3 +16,9 @@ def test_paramstrize01(key):
     assert key == "list3"
     ic("列表入参" + key)
 
+
+# 单参数参数值为字典
+@pytest.mark.parametrize("student_name", [{"name": "todd", "sex": "male"}, {"name": "combs", "sex": "male"}, {"name": "jason", "sex": "female"}, {"name": "bourne", "sex": "female"}])
+def test_paramstrize_04(student_name):
+    ic(student_name["name"])
+    ic(student_name["sex"])  # 需要保持字典key值个数大于调用的次数。如果多字典key值不一样，执行时会报错
