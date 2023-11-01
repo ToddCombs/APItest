@@ -19,3 +19,18 @@ human_ability_list:
   - - combs
     - jason
     - bourne
+
+test:
+  name: login_case1
+  request:
+    url: http://x.x.x.x/api/v1/login/
+    method: POST
+    headers:
+      Content-Type: application/json
+    json:
+      username: test
+      password: 123456
+      human_ability:
+        - name: combs
+          sex: 女
+          age: 33

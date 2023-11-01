@@ -1,11 +1,19 @@
 import yaml
-from icecream import ic
+import os
 
-f = open("../config/data.yaml", encoding="utf-8")
-data = yaml.safe_load(f)
+# print(os.path.realpath(__file__))
+# print(os.path.dirname(os.path.realpath(__file__)))
+# print(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
+# print(os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), "config", "data.yaml"))
 
-ic(data['human'])
-ic(data['human_dict'])
-ic(data['human_name'])
-ic(data['human_ability'])
-ic(data['human_ability_list'])
+
+path = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), "config", "data.yaml")
+
+
+def read_data():
+    f = open(path, encoding="utf-8")
+    data = yaml.safe_load(f)
+    return data
+
+
+get_data = read_data()
