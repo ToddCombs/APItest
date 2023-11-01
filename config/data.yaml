@@ -1,0 +1,21 @@
+human:
+  name: todd
+  sex: 男
+  age: 37
+
+human_dict: { name: todd, sex: 男, age: 37}
+
+human_name:
+  - combs
+  - jason
+  - bourne
+
+human_ability:
+  - name: combs
+    sex: 女
+    age: 33
+
+human_ability_list:
+  - - combs
+    - jason
+    - bourne
