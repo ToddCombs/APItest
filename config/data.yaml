@@ -20,6 +20,18 @@ human_ability_list:
     - jason
     - bourne
 
+human_ability_case:
+  - - todd
+    - male
+  - - combs
+    - female
+  - - ash
+    - male
+  - - jason
+    - female
+  - - bourne
+    - male
+
 test:
   name: login_case1
   request:

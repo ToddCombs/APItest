@@ -16,6 +16,6 @@ def test_paramstrize_03(name, sex):
     ic(f"{name}的性别是{sex}")
 
 
-@pytest.mark.parametrize("name", get_data['human_name'])
-def test_paramstrize_04(name):
-    ic(name)
+@pytest.mark.parametrize("name, sex", get_data['human_ability_case'])
+def test_paramstrize_04(name, sex):
+    ic(f'{name}的性别是{sex}')
