@@ -46,3 +46,17 @@ test:
         - name: combs
           sex: 女
           age: 33
+
+mobile_belong:
+  # 不常用的方式
+  {shouji: 13371115555, appkey: 9508bd66e49ce0e1}
+
+mobile_belong_post:
+  # 手机号，appkey 不常用的方式
+  - - 13371115555
+    - 9508bd66e49ce0e1
+
+mobile_belong_get:
+  # 经常用的方式
+  - [ 13371115555,9508bd66e49ce0e1 ]
+  - [ 13300006666,9508bd66e49ce0e1 ]

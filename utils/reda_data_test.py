@@ -9,6 +9,10 @@ ic(data['test']['request']['method'])
 ic(data['test']['request']['headers'])
 ic(data['test']['request']['json'])
 
+ic(data['mobile_belong'])
+ic(data['mobile_belong_post'])
+ic(data['mobile_belong_get'])
+
 # ic(data['human'])
 # ic(data['human_dict'])
 # ic(data['human_name'])
