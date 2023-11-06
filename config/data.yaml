@@ -1,7 +1,13 @@
 person:
-  name: ${random_name()}
-  age: 27
-  sex: 男
+  - name: 北京-${random_name()}-测开
+    age: ${random_number()}
+    sex: ${random_sex()}
+  - name: 北京-${random_name()}-测开
+    age: ${random_number()}
+    sex: ${random_sex()}
+  - name: 北京-${random_name()}-测开
+    age: ${random_number()}
+    sex: ${random_sex()}
 
 
 person_dict: { name: todd, sex: 男, age: 37}
