@@ -1,6 +1,6 @@
 import requests
 from icecream import ic
-from utils.reda_data import get_data
+from utils.read_data import get_data
 
 import pytest
 

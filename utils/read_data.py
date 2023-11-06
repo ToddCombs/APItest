@@ -19,7 +19,7 @@ def read_data():
 
 
 get_data = read_data()
-
+ic(read_data())
 
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.48"
@@ -31,8 +31,8 @@ params = {
     "page_start": 0
 }
 # req保存了cookie或者session
-res_douban = requests.get("https://movie.douban.com/j/search_subjects", params=params, headers=headers)
-
-
-ic(res_douban.status_code)
-ic(res_douban.text)
+# res_douban = requests.get("https://movie.douban.com/j/search_subjects", params=params, headers=headers)
+#
+#
+# ic(res_douban.status_code)
+# ic(res_douban.text)

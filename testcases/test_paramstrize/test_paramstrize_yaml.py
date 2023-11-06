@@ -1,7 +1,7 @@
 import pytest
 from icecream import ic
 
-from utils.reda_data import get_data
+from utils.read_data import get_data
 
 
 # 多参数多次循环数组入参

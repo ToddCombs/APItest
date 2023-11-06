@@ -1,26 +1,27 @@
-human:
-  name: todd
+person:
+  name: ${random_name()}
+  age: 27
   sex: 男
-  age: 37
 
-human_dict: { name: todd, sex: 男, age: 37}
 
-human_name:
+person_dict: { name: todd, sex: 男, age: 37}
+
+person_name:
   - combs
   - jason
   - bourne
 
-human_ability:
+person_ability:
   - name: combs
     sex: 女
     age: 33
 
-human_ability_list:
+person_ability_list:
   - - combs
     - jason
     - bourne
 
-human_ability_case:
+person_ability_case:
   - - todd
     - male
   - - combs
@@ -42,7 +43,7 @@ test:
     json:
       username: test
       password: 123456
-      human_ability:
+      person_ability:
         - name: combs
           sex: 女
           age: 33
