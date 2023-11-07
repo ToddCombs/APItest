@@ -1,7 +1,7 @@
 import requests
 from icecream import ic
 from utils.read_data import get_data
-
+from utils.read_ini import read_ini
 import pytest
 
 # res_github = requests.get("https://api.github.com/events")
@@ -24,6 +24,7 @@ res_douban = requests.get("https://movie.douban.com/j/search_subjects", params=p
 ic(res_douban.status_code)
 ic(res_douban.text)
 
+url = read_ini()['host']['api_sit_url']
 
 def test_assertNumber():
     assert 1 == 1
@@ -33,7 +34,7 @@ def test_assertNumber():
 def test_mobile():
     param = get_data["mobile_belong"]  # 不通过parametrize调用字典
     ic("测试手机号归属地不用参数化")
-    r = requests.get("https://api.binstd.com/shouji/query",
+    r = requests.get(url + "/shouji/query",
                      params={"shouji": "13371115555", "appkey": "9508bd66e49ce0e1"})
 
     ic(r.status_code)
@@ -48,7 +49,7 @@ def test_mobile():
 @pytest.mark.parametrize("mobile, appkey", get_data["mobile_belong_post"])
 def test_mobile_post(mobile, appkey):
     ic("测试手机号归属地post请求mobile")
-    r = requests.post("https://api.binstd.com/shouji/query",
+    r = requests.post(url + "/shouji/query",
                      params={"shouji": mobile, "appkey": appkey})
 
     ic(r.status_code)
@@ -61,7 +62,7 @@ def test_mobile_post(mobile, appkey):
 @pytest.mark.parametrize("mobile, appkey", get_data["mobile_belong_get"])
 def test_mobile_get(mobile, appkey):
     ic("测试手机号归属地get请求mobile")
-    r = requests.get("https://api.binstd.com/shouji/query",
+    r = requests.get(url + "/shouji/query",
                      params={"shouji": mobile, "appkey": appkey})
 
     ic(r.status_code)
