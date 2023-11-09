@@ -1,4 +1,4 @@
-from core.api_util import get_mobile_belong
+from core.api_util import api_util
 
 
 def mobile_query(params):
@@ -7,5 +7,5 @@ def mobile_query(params):
     :param params:
     :return: 返回查询结果
     '''
-    response = get_mobile_belong(params=params)
+    response = api_util.get_mobile_belong(params=params)
     return response.json()
