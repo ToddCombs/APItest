@@ -67,3 +67,7 @@ mobile_belong_get:
   # 经常用的方式
   - [ 13371115555,9508bd66e49ce0e1 ]
   - [ 13300006666,9508bd66e49ce0e1 ]
+
+
+json_data:
+  {title: foo,body: bar,userId: 1}

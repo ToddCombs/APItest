@@ -19,3 +19,12 @@ class RestClient:
         :return:返回请求
         '''
         return requests.get(self.api_root_url + url, **kwargs)
+
+    def post(self, url, **kwargs):
+        '''
+        发起post请求
+        :param url:
+        :param kwargs:
+        :return:
+        '''
+        return requests.post(self.api_root_url + url, **kwargs)

@@ -14,5 +14,13 @@ class Api(RestClient):
         '''
         return self.get('/shouji/query', **kwargs)
 
+    def post_data(self, **kwargs):
+        '''
+        发送post请求
+        :param kwargs:
+        :return:
+        '''
+        return self.post('/posts', **kwargs)
 
-api_util = Api()    # 初始化类
+
+api_util = Api()  # 初始化类
