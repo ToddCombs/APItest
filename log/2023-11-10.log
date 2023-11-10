@@ -1,0 +1,6 @@
+[2023-11-10 17:14:37,735][log_util.py 41][DEBUG]: 打印debug日志
+[2023-11-10 17:14:37,735][log_util.py 42][INFO]: 打印info日志
+[2023-11-10 17:14:37,735][log_util.py 43][WARNING]: 打印warning日志
+[2023-11-10 17:14:37,735][log_util.py 44][ERROR]: 打印error日志
+[2023-11-10 17:18:58,216][test_post.py 9][INFO]: 开始执行test_post方法
+[2023-11-10 17:19:00,019][test_post.py 13][INFO]: 用例执行完毕
