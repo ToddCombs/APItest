@@ -1,0 +1,106 @@
+[2023-11-13 21:04:25,956][test_post.py 9][INFO]: 开始执行test_post方法
+[2023-11-13 21:04:25,961][rest_client.py 36][INFO]: 接口请求地址>>>>https://jsonplaceholder.typicode.com/posts
+[2023-11-13 21:04:25,962][rest_client.py 37][INFO]: 接口请求方法>>>>POST
+[2023-11-13 21:04:25,962][rest_client.py 38][INFO]: 接口请求入参>>>>{'json': {'title': 'foo', 'body': 'bar', 'userId': 1}}
+[2023-11-13 21:04:26,953][test_post.py 13][INFO]: 用例执行完毕
+[2023-11-13 21:06:15,710][test_post.py 9][INFO]: 开始执行test_post方法
+[2023-11-13 21:06:15,716][rest_client.py 36][INFO]: 接口请求地址>>>>https://jsonplaceholder.typicode.com/posts
+[2023-11-13 21:06:15,716][rest_client.py 37][INFO]: 接口请求方法>>>>POST
+[2023-11-13 21:06:15,716][rest_client.py 38][INFO]: 接口请求入参>>>>{'json': {'title': 'foo', 'body': 'bar', 'userId': 1}}
+[2023-11-13 21:06:16,815][test_post.py 13][INFO]: 用例执行完毕
+[2023-11-13 21:09:38,720][test_post.py 9][INFO]: 开始执行test_post方法
+[2023-11-13 21:09:38,725][rest_client.py 36][INFO]: 接口请求地址>>>>https://jsonplaceholder.typicode.com/posts
+[2023-11-13 21:09:38,725][rest_client.py 37][INFO]: 接口请求方法>>>>POST
+[2023-11-13 21:09:38,725][rest_client.py 38][INFO]: 接口请求入参>>>>{'title': 'foo', 'body': 'bar', 'userId': 1}
+[2023-11-13 21:09:39,828][test_post.py 13][INFO]: 用例执行完毕
+[2023-11-13 21:12:58,799][test_post.py 9][INFO]: 开始执行test_post方法
+[2023-11-13 21:12:58,805][rest_client.py 38][INFO]: 接口请求地址>>>>https://jsonplaceholder.typicode.com/posts
+[2023-11-13 21:12:58,805][rest_client.py 39][INFO]: 接口请求方法>>>>POST
+[2023-11-13 21:12:58,805][rest_client.py 40][INFO]: 接口请求入参>>>>{
+  "title": "foo",
+  "body": "bar",
+  "userId": 1
+}
+[2023-11-13 21:13:03,143][test_post.py 13][INFO]: 用例执行完毕
+[2023-11-13 21:13:38,248][test_post.py 9][INFO]: 开始执行test_post方法
+[2023-11-13 21:13:38,253][rest_client.py 38][INFO]: 接口请求地址>>>>https://jsonplaceholder.typicode.com/posts
+[2023-11-13 21:13:38,253][rest_client.py 39][INFO]: 接口请求方法>>>>POST
+[2023-11-13 21:13:38,253][rest_client.py 40][INFO]: 接口请求入参>>>>{
+  "title": "foo",
+  "body": "bar",
+  "userId": 1
+}
+
+[2023-11-13 21:13:39,346][test_post.py 13][INFO]: 用例执行完毕
+[2023-11-13 21:14:12,741][test_post.py 9][INFO]: 开始执行test_post方法
+[2023-11-13 21:14:12,746][rest_client.py 38][INFO]: 接口请求地址>>>>https://jsonplaceholder.typicode.com/posts
+[2023-11-13 21:14:12,746][rest_client.py 39][INFO]: 接口请求方法>>>>POST
+[2023-11-13 21:14:12,747][rest_client.py 40][INFO]: 接口请求入参>>>>
+{
+  "title": "foo",
+  "body": "bar",
+  "userId": 1
+}
+[2023-11-13 21:14:15,340][test_post.py 13][INFO]: 用例执行完毕
+[2023-11-13 21:29:37,501][test_post.py 9][INFO]: 开始执行test_post方法
+[2023-11-13 21:29:37,506][rest_client.py 64][INFO]: 接口请求地址>>>>https://jsonplaceholder.typicode.com/posts
+[2023-11-13 21:29:37,506][rest_client.py 65][INFO]: 接口请求方法>>>>POST
+[2023-11-13 21:32:08,708][test_post.py 9][INFO]: 开始执行test_post方法
+[2023-11-13 21:32:08,713][rest_client.py 64][INFO]: 接口请求地址>>>>https://jsonplaceholder.typicode.com/posts
+[2023-11-13 21:32:08,713][rest_client.py 65][INFO]: 接口请求方法>>>>POST
+[2023-11-13 21:32:08,713][rest_client.py 70][INFO]: 接口请求入参>>>>
+{
+  "title": "foo",
+  "body": "bar",
+  "userId": 1
+}
+[2023-11-13 21:32:11,053][test_post.py 13][INFO]: 用例执行完毕
+[2023-11-13 21:34:34,658][test_post.py 9][INFO]: 开始执行test_post方法
+[2023-11-13 21:34:34,662][rest_client.py 65][INFO]: 接口请求地址>>>>https://jsonplaceholder.typicode.com/posts
+[2023-11-13 21:34:34,663][rest_client.py 66][INFO]: 接口请求方法>>>>POST
+[2023-11-13 21:34:34,663][rest_client.py 71][INFO]: 接口请求入参>>>>
+{
+  "title": "foo",
+  "body": "bar",
+  "userId": 1
+}
+[2023-11-13 21:34:36,918][test_post.py 13][INFO]: 用例执行完毕
+[2023-11-13 21:40:49,764][rest_client.py 87][INFO]: 接口请求地址>>>>https://api.binstd.com/shouji/query
+[2023-11-13 21:40:49,764][rest_client.py 88][INFO]: 接口请求方法>>>>GET
+[2023-11-13 21:40:49,764][rest_client.py 95][INFO]: 接口请求params参数>>>>
+"params"
+[2023-11-13 21:42:11,572][rest_client.py 87][INFO]: 接口请求地址>>>>https://api.binstd.com/shouji/query
+[2023-11-13 21:42:11,572][rest_client.py 88][INFO]: 接口请求方法>>>>GET
+[2023-11-13 21:42:11,572][rest_client.py 95][INFO]: 接口请求params参数>>>>
+"params"
+[2023-11-13 21:44:04,104][rest_client.py 87][INFO]: 接口请求地址>>>>https://api.binstd.com/shouji/query
+[2023-11-13 21:44:04,104][rest_client.py 88][INFO]: 接口请求方法>>>>GET
+[2023-11-13 21:44:12,968][rest_client.py 95][INFO]: 接口请求params参数>>>>
+"params"
+[2023-11-13 21:45:11,931][rest_client.py 87][INFO]: 接口请求地址>>>>https://api.binstd.com/shouji/query
+[2023-11-13 21:45:11,931][rest_client.py 88][INFO]: 接口请求方法>>>>GET
+[2023-11-13 21:45:11,931][rest_client.py 95][INFO]: 接口请求params参数>>>>
+{
+  "shouji": 13371115555,
+  "appkey": "9508bd66e49ce0e1"
+}
+[2023-11-13 21:52:08,054][conftest.py 22][INFO]: 开始执行测试用例。。。
+[2023-11-13 21:52:08,060][rest_client.py 87][INFO]: 接口请求地址>>>>https://api.binstd.com/posts
+[2023-11-13 21:52:08,060][rest_client.py 88][INFO]: 接口请求方法>>>>POST
+[2023-11-13 21:52:08,060][rest_client.py 93][INFO]: 接口请求入参>>>>
+{
+  "title": "foo",
+  "body": "bar",
+  "userId": 1
+}
+[2023-11-13 21:52:08,271][conftest.py 24][INFO]: 测试用例执行完毕！
+[2023-11-13 21:52:41,628][conftest.py 22][INFO]: 开始执行测试用例。。。
+[2023-11-13 21:52:41,634][rest_client.py 87][INFO]: 接口请求地址>>>>https://jsonplaceholder.typicode.com/posts
+[2023-11-13 21:52:41,634][rest_client.py 88][INFO]: 接口请求方法>>>>POST
+[2023-11-13 21:52:41,634][rest_client.py 93][INFO]: 接口请求入参>>>>
+{
+  "title": "foo",
+  "body": "bar",
+  "userId": 1
+}
+[2023-11-13 21:52:44,051][conftest.py 24][INFO]: 测试用例执行完毕！
