@@ -11,9 +11,10 @@ url = base_data.read_ini()['host']['api_sit_url']
 def test_mobile():
     param = base_data.read_data()["mobile_belong"]  # 不通过parametrize调用字典
     result = mobile_query(param)
-    assert result['status'] == '103'
-    assert result['msg'] == 'APPKEY无请求此数据权限'
-    assert result['result'] is not None
+    assert result.success is True
+    assert result.body['status'] == '103'
+    assert result.body['msg'] == 'APPKEY无请求此数据权限'
+    assert result.body['result'] is not None
 
 
 @pytest.mark.parametrize("mobile, appkey", base_data.read_data()["mobile_belong_post"])

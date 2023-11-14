@@ -1,4 +1,8 @@
+
+
 from core.api_util import api_util
+
+from utils.response_util import process_response
 
 
 def mobile_query(params):
@@ -8,7 +12,9 @@ def mobile_query(params):
     :return: 返回查询结果
     '''
     response = api_util.get_mobile_belong(params=params)
-    return response.json()
+    result = process_response(response)
+    # logger.info('接口的返回内容>>>>' + json.dumps(response.json(), ensure_ascii=False))
+    return result
 
 
 def test_json(json_data):
