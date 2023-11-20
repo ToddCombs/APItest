@@ -16,11 +16,33 @@ class TestMobile:
     @allure.title("测试手机号归属地title")
     @allure.testcase("http://www.baidu.com", name="接口地址testcase")
     @allure.issue("http://www.bing.com", name="缺陷地址issue（很少用）")
+    @allure.link("http://www.bing.com", name="链接地址link（很少用)")
     @allure.description("当前手机号是：13371115555归属地是北京的description，经常用")
     @allure.step("手机号归属地的step，基本用不到")
-    @allure.severity(severity_level="blocker")  # 用例的优先级
+    @allure.severity("critical")  # bug的严重程度
     def test_mobile(self):
         param = base_data.read_data()["mobile_belong"]  # 不通过parametrize调用字典
+        result = mobile_query(param)
+        assert result.success is True
+        assert result.body['status'] == '103'
+        assert result.body['msg'] == 'APPKEY无请求此数据权限'
+        assert result.body['result'] is not None
+
+    @allure.story("查询手机号story")
+    @allure.title("测试手机号归属地title")
+    @allure.testcase("http://www.baidu.com", name="接口地址testcase")
+    @allure.issue("http://www.bing.com", name="缺陷地址issue（很少用）")
+    @allure.link("http://www.bing.com", name="链接地址link（很少用)")
+    @allure.description("当前手机号是：13371115555归属地是北京的description，经常用")
+    @allure.step("手机号归属地的step，基本用不到")
+    @allure.severity("critical")  # bug的严重程度
+    def test_mobile_dynamic(self):
+        param = base_data.read_data()["mobile_belong_dynamic"]['params']
+        title = base_data.read_data()["mobile_belong_dynamic"]['title']
+        story = base_data.read_data()["mobile_belong_dynamic"]['story']
+        allure.dynamic.title(title)
+        allure.dynamic.story(story)
+
         result = mobile_query(param)
         assert result.success is True
         assert result.body['status'] == '103'
@@ -48,7 +70,6 @@ class TestMobile:
     @allure.issue("http://www.bing.com", name="缺陷地址issue（很少用）")
     @allure.description("当前手机号是：13371115555归属地是北京的description，经常用")
     @allure.step("手机号归属地的step，基本用不到")
-    @allure.severity(severity_level="blocker")  # 用例的优先级
     def test_mobile3(self):
         param = base_data.read_data()["mobile_belong"]  # 不通过parametrize调用字典
         result = mobile_query(param)

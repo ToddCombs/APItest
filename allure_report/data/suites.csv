@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Nov 19 10:00:45 CST 2023","Sun Nov 19 10:00:47 CST 2023","1120","testcases.test_case_optimize","case_optimize","","","","test_mobile",""
+"passed","Sun Nov 19 10:00:47 CST 2023","Sun Nov 19 10:00:47 CST 2023","908","testcases.test_case_optimize","case_optimize","","","","test_mobile_post[13371115555-9508bd66e49ce0e1]",""
+"passed","Sun Nov 19 10:00:47 CST 2023","Sun Nov 19 10:00:48 CST 2023","150","testcases.test_case_optimize","case_optimize","","","","test_mobile_get[13371115555-9508bd66e49ce0e1]",""
+"passed","Sun Nov 19 10:00:48 CST 2023","Sun Nov 19 10:00:48 CST 2023","132","testcases.test_case_optimize","case_optimize","","","","test_mobile_get[13300006666-9508bd66e49ce0e1]",""

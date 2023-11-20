@@ -1,0 +1,108 @@
+[2023-11-19 09:54:48,112][conftest.py 22][INFO]: 开始执行测试用例。。。
+[2023-11-19 09:54:48,119][rest_client.py 88][INFO]: 接口请求地址>>>>https://api.binstd.com/shouji/query
+[2023-11-19 09:54:48,119][rest_client.py 89][INFO]: 接口请求方法>>>>GET
+[2023-11-19 09:54:48,119][rest_client.py 96][INFO]: 接口请求params参数>>>>
+{
+  "shouji": 13371115555,
+  "appkey": "9508bd66e49ce0e1"
+}
+[2023-11-19 09:54:48,264][response_util.py 18][INFO]: 接口的返回内容>>>>{"status": "103", "msg": "APPKEY无请求此数据权限", "result": ""}
+[2023-11-19 09:54:48,265][conftest.py 24][INFO]: 测试用例执行完毕！
+[2023-11-19 10:00:45,904][conftest.py 22][INFO]: 开始执行测试用例。。。
+[2023-11-19 10:00:45,910][rest_client.py 88][INFO]: 接口请求地址>>>>https://api.binstd.com/shouji/query
+[2023-11-19 10:00:45,910][rest_client.py 89][INFO]: 接口请求方法>>>>GET
+[2023-11-19 10:00:45,910][rest_client.py 96][INFO]: 接口请求params参数>>>>
+{
+  "shouji": 13371115555,
+  "appkey": "9508bd66e49ce0e1"
+}
+[2023-11-19 10:00:47,025][response_util.py 18][INFO]: 接口的返回内容>>>>{"status": "103", "msg": "APPKEY无请求此数据权限", "result": ""}
+[2023-11-19 10:00:47,025][conftest.py 24][INFO]: 测试用例执行完毕！
+[2023-11-19 10:00:47,028][conftest.py 22][INFO]: 开始执行测试用例。。。
+[2023-11-19 10:00:47,939][conftest.py 24][INFO]: 测试用例执行完毕！
+[2023-11-19 10:00:47,942][conftest.py 22][INFO]: 开始执行测试用例。。。
+[2023-11-19 10:00:48,093][conftest.py 24][INFO]: 测试用例执行完毕！
+[2023-11-19 10:00:48,095][conftest.py 22][INFO]: 开始执行测试用例。。。
+[2023-11-19 10:00:48,230][conftest.py 24][INFO]: 测试用例执行完毕！
+[2023-11-19 10:48:22,151][conftest.py 22][INFO]: 开始执行测试用例。。。
+[2023-11-19 10:48:22,156][rest_client.py 88][INFO]: 接口请求地址>>>>https://api.binstd.com/shouji/query
+[2023-11-19 10:48:22,156][rest_client.py 89][INFO]: 接口请求方法>>>>GET
+[2023-11-19 10:48:22,156][rest_client.py 96][INFO]: 接口请求params参数>>>>
+{
+  "shouji": 13371115555,
+  "appkey": "9508bd66e49ce0e1"
+}
+[2023-11-19 10:48:22,274][response_util.py 18][INFO]: 接口的返回内容>>>>{"status": "103", "msg": "APPKEY无请求此数据权限", "result": ""}
+[2023-11-19 10:48:22,275][conftest.py 24][INFO]: 测试用例执行完毕！
+[2023-11-19 10:49:01,099][conftest.py 22][INFO]: 开始执行测试用例。。。
+[2023-11-19 10:49:01,105][rest_client.py 88][INFO]: 接口请求地址>>>>https://api.binstd.com/shouji/query
+[2023-11-19 10:49:01,105][rest_client.py 89][INFO]: 接口请求方法>>>>GET
+[2023-11-19 10:49:01,105][rest_client.py 96][INFO]: 接口请求params参数>>>>
+{
+  "shouji": 13371115555,
+  "appkey": "9508bd66e49ce0e1"
+}
+[2023-11-19 10:49:01,186][response_util.py 18][INFO]: 接口的返回内容>>>>{"status": "103", "msg": "APPKEY无请求此数据权限", "result": ""}
+[2023-11-19 10:49:01,187][conftest.py 24][INFO]: 测试用例执行完毕！
+[2023-11-19 11:23:39,421][conftest.py 22][INFO]: 开始执行测试用例。。。
+[2023-11-19 11:23:39,426][rest_client.py 88][INFO]: 接口请求地址>>>>https://api.binstd.com/shouji/query
+[2023-11-19 11:23:39,427][rest_client.py 89][INFO]: 接口请求方法>>>>GET
+[2023-11-19 11:23:39,427][rest_client.py 96][INFO]: 接口请求params参数>>>>
+{
+  "shouji": 13371115555,
+  "appkey": "9508bd66e49ce0e1"
+}
+[2023-11-19 11:23:39,521][response_util.py 18][INFO]: 接口的返回内容>>>>{"status": "103", "msg": "APPKEY无请求此数据权限", "result": ""}
+[2023-11-19 11:23:39,521][conftest.py 24][INFO]: 测试用例执行完毕！
+[2023-11-19 11:23:39,524][conftest.py 22][INFO]: 开始执行测试用例。。。
+[2023-11-19 11:23:39,530][rest_client.py 88][INFO]: 接口请求地址>>>>https://api.binstd.com/shouji/query
+[2023-11-19 11:23:39,530][rest_client.py 89][INFO]: 接口请求方法>>>>GET
+[2023-11-19 11:23:39,530][rest_client.py 96][INFO]: 接口请求params参数>>>>
+{
+  "shouji": 13371115555,
+  "appkey": "9508bd66e49ce0e1"
+}
+[2023-11-19 11:23:39,565][response_util.py 18][INFO]: 接口的返回内容>>>>{"status": "103", "msg": "APPKEY无请求此数据权限", "result": ""}
+[2023-11-19 11:23:39,566][conftest.py 24][INFO]: 测试用例执行完毕！
+[2023-11-19 11:23:39,568][conftest.py 22][INFO]: 开始执行测试用例。。。
+[2023-11-19 11:23:40,009][conftest.py 24][INFO]: 测试用例执行完毕！
+[2023-11-19 11:23:40,012][conftest.py 22][INFO]: 开始执行测试用例。。。
+[2023-11-19 11:23:40,098][conftest.py 24][INFO]: 测试用例执行完毕！
+[2023-11-19 11:23:40,101][conftest.py 22][INFO]: 开始执行测试用例。。。
+[2023-11-19 11:23:40,192][conftest.py 24][INFO]: 测试用例执行完毕！
+[2023-11-19 11:27:13,287][conftest.py 22][INFO]: 开始执行测试用例。。。
+[2023-11-19 11:27:13,293][rest_client.py 88][INFO]: 接口请求地址>>>>https://api.binstd.com/shouji/query
+[2023-11-19 11:27:13,293][rest_client.py 89][INFO]: 接口请求方法>>>>GET
+[2023-11-19 11:27:13,293][rest_client.py 96][INFO]: 接口请求params参数>>>>
+{
+  "shouji": 13371115555,
+  "appkey": "9508bd66e49ce0e1"
+}
+[2023-11-19 11:27:13,430][response_util.py 18][INFO]: 接口的返回内容>>>>{"status": "103", "msg": "APPKEY无请求此数据权限", "result": ""}
+[2023-11-19 11:27:13,431][conftest.py 24][INFO]: 测试用例执行完毕！
+[2023-11-19 11:27:13,433][conftest.py 22][INFO]: 开始执行测试用例。。。
+[2023-11-19 11:27:13,439][rest_client.py 88][INFO]: 接口请求地址>>>>https://api.binstd.com/shouji/query
+[2023-11-19 11:27:13,439][rest_client.py 89][INFO]: 接口请求方法>>>>GET
+[2023-11-19 11:27:13,440][rest_client.py 96][INFO]: 接口请求params参数>>>>
+{
+  "shouji": 13371115555,
+  "appkey": "9508bd66e49ce0e1"
+}
+[2023-11-19 11:27:13,475][response_util.py 18][INFO]: 接口的返回内容>>>>{"status": "103", "msg": "APPKEY无请求此数据权限", "result": ""}
+[2023-11-19 11:27:13,476][conftest.py 24][INFO]: 测试用例执行完毕！
+[2023-11-19 11:27:13,479][conftest.py 22][INFO]: 开始执行测试用例。。。
+[2023-11-19 11:27:13,484][rest_client.py 88][INFO]: 接口请求地址>>>>https://api.binstd.com/shouji/query
+[2023-11-19 11:27:13,484][rest_client.py 89][INFO]: 接口请求方法>>>>GET
+[2023-11-19 11:27:13,484][rest_client.py 96][INFO]: 接口请求params参数>>>>
+{
+  "shouji": 13371115555,
+  "appkey": "9508bd66e49ce0e1"
+}
+[2023-11-19 11:27:13,519][response_util.py 18][INFO]: 接口的返回内容>>>>{"status": "103", "msg": "APPKEY无请求此数据权限", "result": ""}
+[2023-11-19 11:27:13,695][conftest.py 24][INFO]: 测试用例执行完毕！
+[2023-11-19 11:27:13,698][conftest.py 22][INFO]: 开始执行测试用例。。。
+[2023-11-19 11:27:13,960][conftest.py 24][INFO]: 测试用例执行完毕！
+[2023-11-19 11:27:13,963][conftest.py 22][INFO]: 开始执行测试用例。。。
+[2023-11-19 11:27:14,052][conftest.py 24][INFO]: 测试用例执行完毕！
+[2023-11-19 11:27:14,054][conftest.py 22][INFO]: 开始执行测试用例。。。
+[2023-11-19 11:27:14,137][conftest.py 24][INFO]: 测试用例执行完毕！

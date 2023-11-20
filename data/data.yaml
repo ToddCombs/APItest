@@ -58,6 +58,12 @@ mobile_belong:
   # 不常用的方式
   {shouji: 13371115555, appkey: 9508bd66e49ce0e1}
 
+mobile_belong_dynamic:
+  # 不常用的方式
+  params: {shouji: 13371115555, appkey: 9508bd66e49ce0e1}
+  title: 测试手机号归属地title——动态1
+  story: 测试手机号归属地story——动态1
+
 mobile_belong_post:
   # 手机号，appkey 不常用的方式
   - - 13371115555

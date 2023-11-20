@@ -1,0 +1,10 @@
+[32mINFO    [0m log:conftest.py:22 开始执行测试用例。。。
+[32mINFO    [0m log:rest_client.py:88 接口请求地址>>>>https://api.binstd.com/shouji/query
+[32mINFO    [0m log:rest_client.py:89 接口请求方法>>>>GET
+[32mINFO    [0m log:rest_client.py:96 接口请求params参数>>>>
+{
+  "shouji": 13371115555,
+  "appkey": "9508bd66e49ce0e1"
+}
+[32mINFO    [0m log:response_util.py:18 接口的返回内容>>>>{"status": "103", "msg": "APPKEY无请求此数据权限", "result": ""}
+[32mINFO    [0m log:conftest.py:24 测试用例执行完毕！
