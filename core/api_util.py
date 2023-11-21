@@ -22,5 +22,12 @@ class Api(RestClient):
         '''
         return self.post('/posts', **kwargs)
 
+    def get_code(self, **kwargs):
+        '''
+        项目实战调用
+        :return:
+        '''
+        return self.post('/code/', **kwargs)
+
 
 api_util = Api()  # 初始化类

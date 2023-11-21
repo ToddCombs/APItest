@@ -77,3 +77,6 @@ mobile_belong_get:
 
 json_data:
   {title: foo,body: bar,userId: 1}
+
+
+test_register: {mobile: 17311111111}
