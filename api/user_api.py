@@ -13,3 +13,18 @@ def send_code(json_data):
     response = api_util.get_code(json=json_data)
     # 引入response处理工具并返回
     return process_response(response)
+
+def register(code, mobile):
+    '''
+    注册接口处理数据
+    :param code:
+    :param mobile:
+    :return:
+    '''
+    json_data = {
+        "code": str(code),
+        "password": "123456",
+        "username": str(mobile)
+    }
+    response = api_util.register_mobile(json=json_data)
+    return process_response(response)

@@ -10,7 +10,7 @@ data = base_data.read_ini()['mysql']
 DB_CONF = {
     "host": data['MYSQL_HOST'],
     "port": int(data['MYSQL_PORT']),
-    "username": data['MYSQL_USER'],
+    "user": data['MYSQL_USER'],
     "password": data['MYSQL_PASSWORD'],
     "db": data['MYSQL_DB']
 }
@@ -30,12 +30,19 @@ class MysqlDb:
         self.cur.close()
         self.conn.close()
 
-    def select_db(self, sql):
+    def select_db_one(self, sql):
         logger.info(f'执行sql:{sql}')
         # 执行查询
         self.cur.execute(sql)
-        # 拿所有获取的数据
+        # 返回一条数据
+        return self.cur.fetchone()
+
+    def select_db_all(self, sql):
+        logger.info(f'执行sql:{sql}')
+        self.cur.execute(sql)
+        # 返回所有数据
         return self.cur.fetchall()
+
 
     def execute_db(self, sql):
         '''
@@ -50,7 +57,9 @@ class MysqlDb:
         except Exception as e:
             logger.info("执行sql出错{}".format(e))
 
+db = MysqlDb()
 
 if __name__ == "__main__":
     db = MysqlDb()
-    db.select_db()
+    result = db.select_db_one("SELECT `code` FROM users_verifycode WHERE mobile = '17311111111' ORDER BY `id` DESC LIMIT 1;")
+    print(result['code'])

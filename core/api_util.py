@@ -27,7 +27,15 @@ class Api(RestClient):
         项目实战调用
         :return:
         '''
-        return self.post('/code/', **kwargs)
+        return self.post("/code/", **kwargs)
+
+    def register_mobile(self, **kwargs):
+        '''
+        调用
+        :param kwargs:
+        :return:
+        '''
+        return self.post("/users/", **kwargs)
 
 
 api_util = Api()  # 初始化类
