@@ -79,4 +79,8 @@ json_data:
   {title: foo,body: bar,userId: 1}
 
 
-test_register: {mobile: 17311111111}
+test_register: {mobile: 17311111112}
+
+user_login:
+  # 手机号密码
+  - [17311111111,123456]

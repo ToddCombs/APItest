@@ -37,5 +37,13 @@ class Api(RestClient):
         '''
         return self.post("/users/", **kwargs)
 
+    def user_login(self, **kwargs):
+        '''
+        用户登录
+        :param kwargs:
+        :return:
+        '''
+        return self.post("/login/", **kwargs)
+
 
 api_util = Api()  # 初始化类

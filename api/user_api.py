@@ -28,3 +28,16 @@ def register(code, mobile):
     }
     response = api_util.register_mobile(json=json_data)
     return process_response(response)
+
+def login(username, password):
+    '''
+    登录接口数据处理
+    :param username:
+    :param password:
+    :return:
+    '''
+    json_data = {
+        "username": username, "password": password
+    }
+    response = api_util.user_login(json=json_data)
+    return process_response(response)
