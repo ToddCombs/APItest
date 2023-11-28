@@ -45,5 +45,12 @@ class Api(RestClient):
         '''
         return self.post("/login/", **kwargs)
 
+    def banner(self, **kwargs):
+        '''
+        goods_api
+        :return:
+        '''
+        return self.get("/banners/", **kwargs)
+
 
 api_util = Api()  # 初始化类

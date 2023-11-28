@@ -35,13 +35,17 @@ class MysqlDb:
         # 执行查询
         self.cur.execute(sql)
         # 返回一条数据
-        return self.cur.fetchone()
+        result = self.cur.fetchone()
+        logger.info(f'sql执行结果:{result}')
+        return result
 
     def select_db_all(self, sql):
         logger.info(f'执行sql:{sql}')
         self.cur.execute(sql)
         # 返回所有数据
-        return self.cur.fetchall()
+        result = self.cur.fetchall()
+        logger.info(f'sql执行结果:{result}')
+        return result
 
 
     def execute_db(self, sql):
