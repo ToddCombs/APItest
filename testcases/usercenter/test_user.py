@@ -1,9 +1,9 @@
 import allure
 import pytest
 
-from api.user_api import send_code, register, login
+from api.user_api import send_code, register, login, add_shopping_cart
 from testcases.conftest import get_data
-from testcases.usercenter.conftest import get_code, delete_user, delete_code
+from testcases.usercenter.conftest import get_code, delete_user, delete_code, get_shop_cart_num
 from utils.read import base_data
 
 
@@ -46,3 +46,19 @@ class TestUser:
         assert result.body['token'] is not None
         assert len(result.body['token']) != 0
 
+    @allure.story("购物车用例")
+    @allure.title("添加商品到购物车用例")
+    @pytest.mark.parametrize('username,password', get_data()['user_login'])
+    def test_shopping_cart(self, username, password):
+        '''
+        加购物车用例
+        :return:
+        '''
+        result = login(username, password)
+        token = result.body['token']
+        param = get_data()['shopping_cart']
+        result = add_shopping_cart(param, token)
+        # 查询购物车数量
+        num = get_shop_cart_num(username, param['goods'])
+        assert result.success is True
+        assert result.body['num'] == num

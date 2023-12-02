@@ -84,3 +84,5 @@ test_register: {mobile: 17311111112}
 user_login:
   # 手机号密码
   - [17311111111,123456]
+
+shopping_cart: {goods: 6, nums: 259 }

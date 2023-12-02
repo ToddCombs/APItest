@@ -52,5 +52,12 @@ class Api(RestClient):
         '''
         return self.get("/banners/", **kwargs)
 
+    def shopping_add(self, **kwargs):
+        '''
+        添加购物车
+        :return:
+        '''
+        return self.post("/shopcarts/", **kwargs)
+
 
 api_util = Api()  # 初始化类
