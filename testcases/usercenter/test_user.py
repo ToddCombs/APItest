@@ -64,3 +64,20 @@ class TestUser:
         num = get_shop_cart_num(username, param['goods'])
         assert result.success is True
         # assert result.body['num'] == num
+
+
+    def test_shopping_cart2(self, login_fixture):
+        '''
+        加购物车用例
+        :return:
+        '''
+        # result = login(username, password)
+        # token = result.body['token']
+        token = login_fixture[0]
+        username = login_fixture[1]
+        param = get_data()['shopping_cart']
+        result = add_shopping_cart(param, token)
+        # 查询购物车数量
+        num = get_shop_cart_num(username, param['goods'])
+        assert result.success is True
+        # assert result.body['num'] == num

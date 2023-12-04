@@ -1,3 +1,5 @@
+import os
+
 import pytest
 
 from api.user_api import login
@@ -17,11 +19,16 @@ def login_fixture():
     简化登录接口
     :return:
     '''
-    data = get_data()['login_fixture']
-    mobile = data['mobile']
-    password = data['password']
-    result = login(mobile, password)
-    return result.body['token'], mobile
+    if 'token' not in os.environ:
+        data = get_data()['login_fixture']
+        mobile = data['mobile']
+        password = data['password']
+        result = login(mobile, password)
+        os.environ['token'] = result.body['token']
+        os.environ['mobile'] = str(mobile)
+        return result.body['token'], mobile
+    else:
+        return os.environ['token'], os.environ['mobile']
 
 
 
