@@ -90,4 +90,9 @@ login_fixture:
   mobile: 17311111111
   password: 123456
 
-shopping_cart: { goods: 6, nums: 259 }
+shopping_cart: { goods: 6, nums: 1 }
+
+add_message:
+  subject: 测试上传留言
+  message: 这是什么网站？？很神奇。
+  message_type: 1

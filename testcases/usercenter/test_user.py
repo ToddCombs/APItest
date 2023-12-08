@@ -1,7 +1,7 @@
 import allure
 import pytest
 
-from api.user_api import send_code, register, login, add_shopping_cart
+from api.user_api import send_code, register, login, add_shopping_cart, add_message
 from testcases.conftest import get_data
 from testcases.usercenter.conftest import get_code, delete_user, delete_code, get_shop_cart_num
 from utils.read import base_data
@@ -81,3 +81,16 @@ class TestUser:
         num = get_shop_cart_num(username, param['goods'])
         assert result.success is True
         # assert result.body['num'] == num
+
+    def test_add_message(self, login_fixture):
+        '''
+        读取file文件
+        :param login_fixture:
+        :return:
+        '''
+        token = login_fixture[0]
+        data = get_data()['add_message']
+        files = base_data.read_file()
+        result = add_message(data, files, token)
+        assert result.success is True
+        assert result.body['subject'] == data['subject']

@@ -59,5 +59,14 @@ class Api(RestClient):
         '''
         return self.post("/shopcarts/", **kwargs)
 
+    def add_message(self, **kwargs):
+        '''
+        添加留言
+        :param kwargs:
+        :return:
+        '''
+        return self.post('/messages/', **kwargs)
+
+
 
 api_util = Api()  # 初始化类

@@ -19,5 +19,5 @@ def fake_data():
     return fake_res
 
 
-for i in range(5):
+for i in range(30):
     print(fake_data())
