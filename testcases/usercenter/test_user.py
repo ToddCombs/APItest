@@ -1,7 +1,7 @@
 import allure
 import pytest
 
-from api.user_api import send_code, register, login, add_shopping_cart, add_message
+from api.user_api import send_code, register, login, add_shopping_cart, add_message, add_shopping_cart2, add_message2
 from testcases.conftest import get_data
 from testcases.usercenter.conftest import get_code, delete_user, delete_code, get_shop_cart_num
 from utils.read import base_data
@@ -65,7 +65,8 @@ class TestUser:
         assert result.success is True
         # assert result.body['num'] == num
 
-
+    @allure.story("购物车用例")
+    @allure.title("添加商品到购物车用例")
     def test_shopping_cart2(self, login_fixture):
         """
         加购物车用例
@@ -92,5 +93,36 @@ class TestUser:
         data = get_data()['add_message']
         files = base_data.read_file()
         result = add_message(data, files, token)
+        assert result.success is True
+        assert result.body['subject'] == data['subject']
+
+    @allure.story("购物车用例")
+    @allure.title("添加商品到购物车用例")
+    def test_shopping_cart3(self, login_token):
+        """
+        加购物车用例
+        :return:
+        """
+        # result = login(username, password)
+        # token = result.body['token']
+        headers = login_token[0]
+        username = login_token[1]
+        param = get_data()['shopping_cart']
+        result = add_shopping_cart2(param, headers)
+        # 查询购物车数量
+        num = get_shop_cart_num(username, param['goods'])
+        assert result.success is True
+        # assert result.body['num'] == num
+
+    def test_add_message2(self, login_token):
+        """
+        读取file文件
+        :param login_token:
+        :return:
+        """
+        headers = login_token[0]
+        data = get_data()['add_message']
+        files = base_data.read_file()
+        result = add_message2(data, files, headers)
         assert result.success is True
         assert result.body['subject'] == data['subject']
