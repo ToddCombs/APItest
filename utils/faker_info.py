@@ -4,10 +4,10 @@ faker = Faker('zh_CN')
 
 
 def fake_data():
-    '''
+    """
     fake信息获取接口
     :return:
-    '''
+    """
     letters_cn = '藏川鄂甘赣贵桂黑沪吉冀津晋京辽鲁蒙闽宁青琼陕苏皖湘新渝豫粤云浙'
     letters_num = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     fake_res = {

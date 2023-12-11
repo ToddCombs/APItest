@@ -12,10 +12,10 @@ class TestUser:
     @allure.story("注册登录")
     @allure.title("注册手机号用例")
     def test_register(self):
-        '''
+        """
         注册验证
         :return:
-        '''
+        """
         json_data = base_data.read_data()['test_register']
         # 删除验证码
         delete_code(json_data['mobile'])
@@ -36,10 +36,10 @@ class TestUser:
     @allure.story("用户登录")
     @allure.title("手机号登录用例")
     def test_login(self, username, password):
-        '''
+        """
         登录验证
         :return:
-        '''
+        """
         print(username, password)
         result = login(username, password)
         assert result.success is True
@@ -50,10 +50,10 @@ class TestUser:
     @allure.title("添加商品到购物车用例")
     # @pytest.mark.parametrize('username,password', get_data()['user_login'])
     def test_shopping_cart(self, login_fixture):
-        '''
+        """
         加购物车用例
         :return:
-        '''
+        """
         # result = login(username, password)
         # token = result.body['token']
         token = login_fixture[0]
@@ -67,10 +67,10 @@ class TestUser:
 
 
     def test_shopping_cart2(self, login_fixture):
-        '''
+        """
         加购物车用例
         :return:
-        '''
+        """
         # result = login(username, password)
         # token = result.body['token']
         token = login_fixture[0]
@@ -83,11 +83,11 @@ class TestUser:
         # assert result.body['num'] == num
 
     def test_add_message(self, login_fixture):
-        '''
+        """
         读取file文件
         :param login_fixture:
         :return:
-        '''
+        """
         token = login_fixture[0]
         data = get_data()['add_message']
         files = base_data.read_file()

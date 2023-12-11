@@ -1,0 +1,12 @@
+user_login_new:
+  # 接口基本信息
+  - request_info:
+      url: /login/
+      method: POST
+      headers:
+        Content-Type: application/json
+      case_info:
+        # 接口请求参数,params,json,data
+        json:
+          username: 17311111111
+          password: 123456
