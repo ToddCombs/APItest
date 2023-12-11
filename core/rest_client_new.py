@@ -14,44 +14,10 @@ class RestClient:
         self.api_root_url = api_root_url
         self.session = requests.Session()
 
-    def get(self, url, **kwargs):
-        """
-        发起get请求
-        :param url:
-        :param params:
-        :param kwargs: 入参的params会进入这个参数。所以不传params也可以
-        :return:返回请求
-        """
-        # return requests.get(self.api_root_url + url, **kwargs)
-        return self.request(url, "GET", **kwargs)
-
-    def post(self, url, **kwargs):
-        """
-        发起post请求
-        :param url:
-        :param kwargs:
-        :return:
-        """
-        # return requests.post(self.api_root_url + url, **kwargs)
-        return self.request(url, "POST", **kwargs)
-
-    def put(self, url, **kwargs):
-        """
-        发put请求
-        :param url:
-        :param kwargs:
-        :return:
-        """
-        return self.request(url, 'PUT', **kwargs)
-
-    def delete(self, url, **kwargs):
-        """
-        发delect请求
-        :param url:
-        :param kwargs:
-        :return:
-        """
-        return self.request(url, 'DELETE', **kwargs)
+    def do_request(self, url, method, **kwargs):
+        response = self.request(url, method, **kwargs).json()
+        logger.info("接口返回内容>>>>\n{}".format(json.dumps(response, ensure_ascii=False, indent=2)))
+        return response
 
     def request(self, url, method, **kwargs):
         """
