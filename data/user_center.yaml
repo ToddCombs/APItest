@@ -7,10 +7,19 @@ user_login_new:
         Content-Type: application/json
     case_info:
         # 接口请求参数,params,json,data
-      json:
-        username: 17311111111
-        password: 123456
-      validate:
-          # 通过json表达式拿到token(实际结果)，和后面的字符串(期望结果)做断言
-        - contains: [$.token, 'eyJ0eX']
-        - contains: [$.token, 'eyJ0eX1']
+      - json:
+          username: 17311111111
+          password: 123456
+        validate:
+            # 通过json表达式拿到token(实际结果)，和后面的字符串(期望结果)做断言
+          - contains: [$.token, 'eyJ0eX']
+#          - contains: [$.token, 'eyJ0eX1']
+          - eq: [ '$.non_field_errors[0]', '无法使用提供的认证信息登录。']
+      - json:
+          username: 17311111111
+          password: 123456
+        validate:
+            # 通过json表达式拿到token(实际结果)，和后面的字符串(期望结果)做断言
+          - contains: [$.token, 'eyJ0eX']
+#          - contains: [$.token, 'eyJ0eX1']
+          - eq: [ '$.non_field_errors[0]', '无法使用提供的认证信息登录。']

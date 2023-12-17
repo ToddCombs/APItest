@@ -3,7 +3,7 @@ import os
 import yaml
 
 
-class YamlUtils:
+class YamlUtil:
 
     def __init__(self):
         self.data_path = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), "data/")
@@ -15,8 +15,22 @@ class YamlUtils:
                 return value[key_name]
             return value
 
+    def extract_case(self, yaml_name, key_name):
+        """
+        组装yaml数据
+        :param yaml_name:
+        :param key_name:
+        :return:
+        """
+        case_value = self.read_testcases_yaml(yaml_name, key_name)[0]
+        new_case = []
+        for value in case_value['case_info']:
+            new_case.append({"request_info": case_value['request_info'], "case_info": value})
+        return new_case
+
+
 
 if __name__ == '__main__':
-    data = YamlUtils().read_testcases_yaml("user_center.yaml")
+    data = YamlUtil().extract_case("user_center.yaml", "user_login_new")
 
     print(data)
