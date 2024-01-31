@@ -17,7 +17,7 @@ columns = ['order_code', 'first_channel_code', 'second_channel_code', 'user_id',
            'source', 'delete_flag', 'remark']
 
 for i in range(1, 10001):
-    values = f"('order0000{i}', 'CJ_YT_AHYT{i}', 'gx_ywx_tyb{i}', '7{i}','23555438{i}', '13718415257{i}','1000{i}', '29.90{i}','29.90{i}', '0.00{i}','3000{i}','2{i}','107203477297799{i}','3{i}','0{i}','test{i}')"
+    values = f"('order00aaaa{i}', 'CJ_YT_AHYT', 'gx_ywx_tyb', '7','23555438', '13718415257','1000', '29.90','29.90', '0.00','3000','2','107203477297799','3{i}','0','test')"
     insert_sql = f"INSERT INTO {table_name} ({', '.join(columns)}) VALUES {values};"
     cursor.execute(insert_sql)
 
