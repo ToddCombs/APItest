@@ -2,10 +2,7 @@
 import mysql.connector
 
 connection = mysql.connector.connect(
-    host="mysql-qa-all.mysql.tcloud.etcp.cn",
-    user="yeehaw_insurance_dev",
-    password="mNtDH3Cmso7h96nE",
-    database="yeehaw_insurance"
+
 )
 
 cursor = connection.cursor()

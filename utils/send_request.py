@@ -30,7 +30,7 @@ def param_string(params):
 def send_request(url, method, **kwargs):
     """
     发送测试请求
-    :param url:https://testrights.chexun.link/
+    :param url:/
     :param method:
     :param kwargs:
     :return:
@@ -39,13 +39,13 @@ def send_request(url, method, **kwargs):
 
 if __name__ == '__main__':
 
-    hosts = "https://testrights.chexun.link/"
-    auth = "api/v1/open/auth"
+    hosts = "/"
+    auth = ""
     url = hosts + auth
     method = "post"
     params = {
         "sign": "",
-        "channelNo": "d8974782ab87ef8a0c020a0c771160eb",
+        "channelNo": "",
         "data": "data",
         "timestamp": int(round(time.time() * 1000))
     }
