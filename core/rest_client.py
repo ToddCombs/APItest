@@ -7,6 +7,7 @@ from utils.read import base_data
 
 api_root_url = base_data.read_ini()['host']['api_sit_url']
 
+# allure_report分层:epic->feature->story->title
 
 class RestClient:
 
